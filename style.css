@@ -1,0 +1,283 @@
+body
+{
+    background-color: rgb(217, 231, 247);
+
+/* for icons */
+.icon-container {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/* Tooltip styling */
+.tooltip {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color:  rgba(0, 0, 0, 0.521);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Show tooltip when hovering */
+.icon-container:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Icon styling */
+.social-icon {
+    width: 30px;
+    height: 30px;
+    box-shadow: 0 15px 20px  rgba(33, 9, 244, 0.255);
+    object-fit: cover;
+    border-radius: 20%;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Popup (Enlarge) effect on hover */
+.icon-container:hover .social-icon {
+    transform: scale(1.2);
+    border-radius: 20%;
+
+}
+
+
+
+    
+}
+header
+{
+    background: linear-gradient(to right, #f9620b,#831bcd,#f9620b);
+}
+footer
+{
+    background: linear-gradient(to right,#f9620b, #831bcd,#f9620b);
+max-height: 70px;
+            color: white;
+            text-align: center;
+            padding: 30px 10px;
+            min-height: 60px;
+}
+header,footer
+{
+color: aliceblue;
+text-align: center;
+padding: 40px 0;
+}
+footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+Button {
+    color: rgb(3, 3, 3); font-size: 20px; line-height: 0.1px;width: 450px; padding: 15px; border-radius: 9px; font-family: Georgia, serif; font-weight: normal; text-decoration: none; font-style: normal; font-variant: normal; text-transform: none; background: image #f8f6f6;; box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px; border: 2px solid rgb(9, 9, 9); display: inline-block;}
+    
+    Button:hover {
+    background:linear-gradient(to right, #2a7eed,#eeecea); }
+
+    Button:active {
+    background: linear-gradient(to right, #831bcd,#f9620b); }
+    class{
+        background: #CE5937;
+        background: -moz-linear-gradient(left, #CE5937 0%, #1C6EA4 50%, #C59237 100%);
+        background: -webkit-linear-gradient(left, #CE5937 0%, #1C6EA4 50%, #C59237 100%);
+        background: linear-gradient(to right, #CE5937 0%, #1C6EA4 50%, #C59237 100%);
+    }
+li{
+    color: rgb(3, 3, 3); font-size: 20px; line-height: 0.1px;width: 200px; padding: 15px; border-radius: 5px; font-family: Georgia, serif; font-weight: normal; text-decoration: none; font-style: normal; font-variant: normal; text-transform: none; background: image #f8f6f6;; box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px; border: 2px solid rgb(9, 9, 9); display: inline-block;
+    margin-bottom: 30px;
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+    text-align: center;
+    transition: background 0.5s, color 0.5s;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+body.dark-mode hr {
+    border: 1.5px solid rgb(112, 7, 7); /* Change hr color in dark mode */
+}
+
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode li,
+body.dark-mode table {
+    color: white;
+}
+
+
+/* Dark Mode Toggle Icon */
+.dark-mode-toggle {
+    position: fixed;
+    top: 20px;
+    color: red;
+    right: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+.dark-mode-toggle:hover {
+    transform: scale(1.2);
+}
+
+ /*------skill---------------*/
+#programming-languages {
+    margin-top: 50px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Skill Block */
+#programming-languages .skill {
+    margin-bottom: 20px;
+}
+
+/* Progress Bar Container */
+#programming-languages .progress-bar {
+    width: 100%;
+    height: 15px;
+    background: rgba(132, 114, 114, 0.1); /* Light background for contrast */
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Progress Fill (Animated) */
+#programming-languages .progress {
+    height: 100%;
+    width: 0; /* Start at 0 for animation */
+    background: linear-gradient(to right, #f9620b, #831bcd, #f9620b);
+    border-radius: 10px;
+    position: absolute; /* Align progress bar inside container */
+    left: 0;
+    top: 0;
+    transition: width 1.5s ease-in-out; /* Smooth animation */
+}
+
+#projects{
+    display: grid;
+    width: 50%;
+    max-width: 1200px;
+    margin: 0 auto;
+    grid-template-columns: repeat(3,1fr);
+    gap:10px;
+}
+.project-thumbnail {
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 20px 20px rgba(33, 9, 244, 0.255);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.project-thumbnail{
+    padding: 0px 0px 20px 0px;
+}
+.project-thumbnail img {
+    width: 100%; /* Ensures full width within the container */
+    height: 150px; /* Fixed height for uniform size */
+    object-fit: cover; /* Ensures images fill the space without distortion */
+    border-radius: 8px 8px 0px 0px;
+}
+.project-thumbnail h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+.project-thumbnail p{
+    margin-top: 10px;
+}
+.project-thumbnail .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:  #831bcd; /* Primary button color */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+      align-items: center;
+    
+    transition: background 0.3s ease, transform 0.2s ease;
+
+}
+
+/* Hover Effect */
+.project-thumbnail .btn:hover {
+    background: linear-gradient(to right, #f9620b, #831bcd, #f9620b);; /* Darker shade for hover */
+    transform: scale(1.05); /* Slight enlargement */
+}
+
+/* Active Effect */
+.project-thumbnail .btn:active {
+    background: linear-gradient(to right, #f9620b, #831bcd, #f9620b);;
+    transform: scale(0.98); /* Slight shrink on click */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .thumbnail-content .btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
+    overflow: hidden;
+  
+}
+
+.icon {
+    width: 60px; /* Adjust icon size */
+    height: auto;
+    animation: moveIcons 4s ease-in-out infinite alternate;
+    border-radius: 25%;
+    box-shadow: 0 20px 20px rgba(33, 9, 244, 0.255);
+    
+}
+
+/* Animation Keyframes */
+@keyframes moveIcons {
+    0% { transform: translateX(-30px); }
+    100% { transform: translateX(30px); }
+}
+
+
+
+
+
+
+
